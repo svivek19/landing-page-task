@@ -1,0 +1,30 @@
+{
+    "students": [
+      {
+        "name": "John Doe",
+        "review": "The course was excellent! I learned a lot and the instructor was very knowledgeable.",
+        "image": "https://img.freepik.com/premium-photo/man-student-glasses-holding-books_93675-95720.jpg"
+      },
+      {
+        "name": "Jane Smith",
+        "review": "I really enjoyed the course content. It was well-organized and easy to follow.",
+        "image": "https://media.istockphoto.com/id/1389017464/photo/man-wearing-button-down-shirt-and-eyeglasses-poses-for-photo.jpg?s=612x612&w=0&k=20&c=_vWOPqcocxJzG_Fpfd7zAPpDQr6EjRFF62VRfdj19TY="
+      },
+      {
+        "name": "Michael Johnson",
+        "review": "The course exceeded my expectations. The hands-on exercises were particularly helpful.",
+        "image": "https://media.istockphoto.com/id/1392990621/photo/smart-handsome-positive-indian-or-arabian-guy-with-glasses-in-casual-wear-student-or.jpg?s=612x612&w=0&k=20&c=qyj5Dh8_uN5Xue9aICOI0z_OYyzNh_f1pFeAhRA4FQA="
+      },
+      {
+        "name": "Emily Brown",
+        "review": "The course provided a great overview of the subject. I feel much more confident now.",
+        "image": "https://www.shutterstock.com/image-photo/young-happy-business-woman-sitting-260nw-2223351415.jpg"
+      },
+      {
+        "name": "David Wilson",
+        "review": "The instructor was engaging and explained complex topics clearly. Highly recommended!",
+        "image": "https://media.istockphoto.com/id/1438969575/photo/smiling-young-male-college-student-wearing-headphones-standing-in-a-classroom.jpg?s=612x612&w=0&k=20&c=yNawJP9JGXU6LOL262ME5M1U2xxNKQsvT7F9DZhZCh4="
+      }
+    ]
+  }
+  
