@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaRegUser, FaShoppingCart } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -35,9 +36,12 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <span className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap ">
+        <Link
+          to={"/"}
+          className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap "
+        >
           KaroAbhayas
-        </span>
+        </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-8 rtl:space-x-reverse">
           <button
             type="button"
@@ -69,13 +73,13 @@ const Navbar = () => {
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
             <li>
-              <a
-                href="#"
+              <Link
+                to={"/classes"}
                 className="block py-2 px-3 md:p-0 "
                 aria-current="page"
               >
                 Classes
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="block py-2 px-3 md:p-0 ">

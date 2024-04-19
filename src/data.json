@@ -67,6 +67,33 @@
         "name": "William Clark",
         "review": "I've never had any issues with their products. They're durable and reliable."
       }
+    ],
+    "neet_courses": [
+      {
+        "name": "NEET Crash Course",
+        "image_url": "https://www.pw.live/exams/wp-content/uploads/2024/01/NEET-Ultimate-Crash-Course-2.0-2024-01-jpg.webp",
+        "description": "A comprehensive crash course designed to cover all NEET syllabus topics efficiently within a short period, focusing on key concepts, problem-solving techniques, and practice tests to boost your preparation for the NEET entrance exam."
+      },
+      {
+        "name": "NEET Online Coaching",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOXzZMR9PjYH_JbRjh-wcqWEASstH9Br1ZL6JzbTxBnA&s",
+        "description": "An interactive online coaching program tailored for NEET aspirants, featuring live lectures, recorded sessions, doubt-solving forums, mock tests, and personalized mentorship to help students prepare effectively from the comfort of their homes."
+      },
+      {
+        "name": "NEET Test Series",
+        "image_url": "https://d20x1nptavktw0.cloudfront.net/wordpress_media/2022/03/test-series-to-clear-neet.jpg",
+        "description": "A series of simulated NEET tests designed to mimic the actual exam environment, providing students with ample practice opportunities, performance analysis, and feedback to assess their strengths and weaknesses and refine their exam-taking strategies."
+      },
+      {
+        "name": "NEET Revision Classes",
+        "image_url": "https://www.pw.live/exams/wp-content/uploads/2023/12/neet-revision-strategy.png",
+        "description": "Intensive revision classes aimed at reinforcing key NEET concepts, solving previous years' question papers, and addressing common misconceptions to ensure a thorough understanding of topics and boost confidence before the NEET exam."
+      },
+      {
+        "name": "NEET Study Material Package",
+        "image_url": "https://cdn1.byjus.com/neet/wp-content/uploads/2018/03/13061925/neet.jpg",
+        "description": "A comprehensive study material package containing textbooks, reference guides, question banks, and practice papers curated by experts to cover the entire NEET syllabus, enabling self-paced learning and effective revision."
+      }
     ]
   }
   
