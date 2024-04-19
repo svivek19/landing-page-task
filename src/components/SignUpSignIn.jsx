@@ -26,6 +26,10 @@ const SignUpSignIn = () => {
       toast.success("login sucessfull");
     } else {
       toast.error("Please fill in all fields.");
+      setEmail("");
+      setName("");
+      setPassword("");
+      setPhone("");
     }
   };
 
