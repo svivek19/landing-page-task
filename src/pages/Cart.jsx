@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const { cartItems, removeFromCart } = useContext(CartContext);
+  const navigate = useNavigate();
 
   const handleRemove = (index) => {
     Swal.fire({
@@ -54,6 +56,8 @@ const Cart = () => {
             text: "Order Placed.",
             icon: "success",
           });
+          removeFromCart();
+          navigate("/");
         }
       });
     }
