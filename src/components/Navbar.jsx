@@ -49,9 +49,9 @@ const Navbar = () => {
           >
             join us
           </button>
-          <button type="button" className="font-medium rounded-lg text-xl ">
+          <Link to={"/login"} className="font-medium my-3 rounded-lg text-xl ">
             <FaRegUser />
-          </button>
+          </Link>
           <button type="button" className="font-medium rounded-lg text-xl ">
             <FaShoppingCart />
           </button>

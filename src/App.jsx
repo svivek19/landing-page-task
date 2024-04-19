@@ -8,6 +8,7 @@ import Footer from "./components/Foooter";
 import Classes from "./pages/Classes";
 import Products from "./pages/Products";
 import About from "./pages/About";
+import Login from "./pages/Login";
 
 const Home = () => (
   <div className="flex flex-col">
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/classes" element={<Classes />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </div>
