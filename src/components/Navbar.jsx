@@ -87,9 +87,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 md:p-0 ">
+              <Link to={"/about"} className="block py-2 px-3 md:p-0 ">
                 About Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

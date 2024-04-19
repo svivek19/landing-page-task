@@ -7,6 +7,7 @@ import Reviews from "./components/Reviews";
 import Footer from "./components/Foooter";
 import Classes from "./pages/Classes";
 import Products from "./pages/Products";
+import About from "./pages/About";
 
 const Home = () => (
   <div className="flex flex-col">
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/" exact element={<Home />} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </div>
