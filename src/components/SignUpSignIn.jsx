@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { useAuth } from "../context/AuthContext";
 
 const SignUpSignIn = () => {
   const [email, setEmail] = useState("");
@@ -9,21 +10,22 @@ const SignUpSignIn = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
 
+  const { login, logout, loggedInUser } = useAuth();
+
   const handleSignUp = () => {
-    // Validate form fields
     if (
       email.trim() !== "" &&
       name.trim() !== "" &&
       password.trim() !== "" &&
       phone.trim() !== ""
     ) {
-      // Save user information to local storage
       localStorage.setItem("email", email);
       localStorage.setItem("name", name);
       localStorage.setItem("password", password);
       localStorage.setItem("phone", phone);
       setLoggedIn(true);
       toast.success("login sucessfull");
+      login({ email, name, password, phone });
     } else {
       toast.error("Please fill in all fields.");
       setEmail("");
@@ -40,6 +42,7 @@ const SignUpSignIn = () => {
     if (email === storedEmail && password === storedPassword) {
       setLoggedIn(true);
       toast.success("login sucessfull");
+      login({ email, password });
     } else {
       toast.error("Invalid email or password.");
       setEmail("");
@@ -53,6 +56,7 @@ const SignUpSignIn = () => {
     localStorage.removeItem("password");
     localStorage.removeItem("phone");
     setLoggedIn(false);
+    logout();
   };
 
   return (
