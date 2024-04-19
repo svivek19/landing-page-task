@@ -18,9 +18,9 @@ const UserInfo = () => {
   useEffect(() => {
     if (loggedInUser) {
       setFormData({
-        name: loggedInUser.name,
-        phone: loggedInUser.phone,
-        email: loggedInUser.email,
+        name: loggedInUser.name || "",
+        phone: loggedInUser.phone || "",
+        email: loggedInUser.email || "",
         street: "",
         city: "",
         state: "",
@@ -53,9 +53,9 @@ const UserInfo = () => {
   };
 
   return (
-    <div className="flex justify-around">
+    <div className="md:flex justify-around">
       <div className="px-6 py-3 space-y-4 rounded">
-        {!isEditing ? (
+        {loggedInUser && !isEditing ? (
           <>
             <h2 className="text-xl font-semibold">{loggedInUser.name}</h2>
             <h2 className="text-xl">{loggedInUser.phone}</h2>
@@ -142,7 +142,7 @@ const UserInfo = () => {
         </button>
       </div>
 
-      <div className="bg-slate-300 p-3 w-3/5 space-y-2 rounded capitalize">
+      <div className="bg-slate-300 p-3 md:w-3/5 space-y-2 rounded capitalize">
         <h1 className="font-semibold text-xl">ADDRESS</h1>
         <p>Street: {formData.street}</p>
         <p>City: {formData.city}</p>
