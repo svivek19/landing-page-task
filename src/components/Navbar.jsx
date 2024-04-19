@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FaRegUser, FaShoppingCart } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import "../App.css";
 import { Link } from "react-router-dom";
+import { CartContext } from "../context/CartContext";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const { cartItems } = useContext(CartContext);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -31,9 +34,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-20 top-0 start-0 ${
-        isScrolled ? "bg-blur" : ""
-      }`}
+      className={`fixed w-full z-20 top-0 start-0 ${isScrolled && "bg-blur"}`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
@@ -58,7 +59,7 @@ const Navbar = () => {
             className="font-medium flex justify-center items-center rounded-lg text-xl "
           >
             <FaShoppingCart />
-            {`(${0})`}
+            {`(${cartItems?.length})`}
           </Link>
           <button
             onClick={toggleMobileMenu}

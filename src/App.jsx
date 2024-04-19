@@ -10,6 +10,7 @@ import Products from "./pages/Products";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
+import { CartProvider } from "./context/CartContext";
 
 const Home = () => (
   <div className="flex flex-col">
@@ -22,18 +23,20 @@ const Home = () => (
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col justify-between min-h-screen">
-        <Navbar />
-        <Routes className="flex-1">
-          <Route path="/" exact element={<Home />} />
-          <Route path="/classes" element={<Classes />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-        <Footer />
-      </div>
+      <CartProvider>
+        <div className="flex flex-col justify-between min-h-screen">
+          <Navbar />
+          <Routes className="flex-1">
+            <Route path="/" exact element={<Home />} />
+            <Route path="/classes" element={<Classes />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+          <Footer />
+        </div>
+      </CartProvider>
     </Router>
   );
 };

@@ -1,8 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import SearchForm from "../components/SearchForm";
 import data from "../data.json";
+import { CartContext } from "../context/CartContext";
 
 const Products = () => {
+  const { addToCart } = useContext(CartContext);
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -28,7 +35,10 @@ const Products = () => {
                 <h5 className="mb-2 text-xl font-medium">{product.title}</h5>
                 <p className="mb-3 text-base">{product.description}</p>
                 <p className="mb-3 text-base text-red-500">₹ {product.price}</p>
-                <button className="bg-slate-800 uppercase text-white px-6 py-2 rounded-md text-xl self-start">
+                <button
+                  onClick={() => handleAddToCart(product)}
+                  className="bg-slate-800 uppercase text-white px-6 py-2 rounded-md text-xl self-start"
+                >
                   add to cart
                 </button>
               </div>
