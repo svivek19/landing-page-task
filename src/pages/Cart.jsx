@@ -1,11 +1,62 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import Swal from "sweetalert2";
 
 const Cart = () => {
   const { cartItems, removeFromCart } = useContext(CartContext);
 
   const handleRemove = (index) => {
-    removeFromCart(index);
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Deleted!",
+          text: "Your file has been deleted.",
+          icon: "success",
+        });
+        removeFromCart(index);
+      }
+    });
+  };
+
+  const amount = cartItems.map((item) => item.price);
+  const totalPrice = amount.reduce(
+    (total, price) => total + parseInt(price),
+    0
+  );
+
+  const handleCheckout = async () => {
+    const { value: text } = await Swal.fire({
+      input: "textarea",
+      inputLabel: "Address",
+      inputPlaceholder: "Type your address here...",
+      showCancelButton: true,
+    });
+    if (text) {
+      Swal.fire({
+        title: "Are you sure?",
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, Confirm!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: "Success!",
+            text: "Order Placed.",
+            icon: "success",
+          });
+        }
+      });
+    }
   };
 
   return (
@@ -39,8 +90,11 @@ const Cart = () => {
           </ul>
 
           <div className="mt-8 text-xl font-semibold">
-            <h1>Total: {cartItems.map((item) => item.price)}</h1>
-            <button className="bg-slate-900 px-6 py-1 font-normal rounded text-base my-4 text-white">
+            <h1>Total: {totalPrice}</h1>
+            <button
+              onClick={handleCheckout}
+              className="bg-slate-900 px-6 py-1 font-normal rounded text-base my-4 text-white"
+            >
               Checkout
             </button>
           </div>
