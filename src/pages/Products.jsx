@@ -1,7 +1,14 @@
 import React from "react";
+import SearchForm from "../components/SearchForm";
 
 const Products = () => {
-  return <div>Products</div>;
+  return (
+    <>
+      <div>
+        <SearchForm />
+      </div>
+    </>
+  );
 };
 
 export default Products;
