@@ -41,6 +41,11 @@ const UserInfo = () => {
     });
   };
 
+  const handleLogout = () => {
+    localStorage.clear();
+    logout();
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("userInfo", JSON.stringify(formData));
@@ -131,7 +136,7 @@ const UserInfo = () => {
 
         <button
           className="bg-red-600 rounded px-6 py-1 mx-2 text-white text-center font-bold"
-          onClick={logout}
+          onClick={handleLogout}
         >
           Logout
         </button>

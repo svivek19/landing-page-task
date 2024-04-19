@@ -10,7 +10,7 @@ const SignUpSignIn = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
 
-  const { login, logout, loggedInUser } = useAuth();
+  const { login } = useAuth();
 
   const handleSignUp = () => {
     if (
@@ -48,15 +48,6 @@ const SignUpSignIn = () => {
       setEmail("");
       setPassword("");
     }
-  };
-
-  const handleLogout = () => {
-    localStorage.removeItem("email");
-    localStorage.removeItem("name");
-    localStorage.removeItem("password");
-    localStorage.removeItem("phone");
-    setLoggedIn(false);
-    logout();
   };
 
   return (
