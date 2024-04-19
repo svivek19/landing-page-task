@@ -13,7 +13,7 @@ const Classes = () => {
           className="flex flex-col rounded-lg text-surface md:flex-row md:space-x-6 my-6"
           key={index}
         >
-          <div className="w-full md:w-1/3 h-48 md:h-auto">
+          <div className="w-full md:w-1/3 h-48 md:h-44">
             <img
               className="w-full h-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none"
               src={course.image_url}
