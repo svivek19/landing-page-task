@@ -9,6 +9,7 @@ import Classes from "./pages/Classes";
 import Products from "./pages/Products";
 import About from "./pages/About";
 import Login from "./pages/Login";
+import Cart from "./pages/Cart";
 
 const Home = () => (
   <div className="flex flex-col">
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />
       </div>

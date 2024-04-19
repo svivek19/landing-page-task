@@ -52,9 +52,14 @@ const Navbar = () => {
           <Link to={"/login"} className="font-medium my-3 rounded-lg text-xl ">
             <FaRegUser />
           </Link>
-          <button type="button" className="font-medium rounded-lg text-xl ">
+          <Link
+            to={"/cart"}
+            type="button"
+            className="font-medium flex justify-center items-center rounded-lg text-xl "
+          >
             <FaShoppingCart />
-          </button>
+            {`(${0})`}
+          </Link>
           <button
             onClick={toggleMobileMenu}
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-smrounded-lg md:hidden  "

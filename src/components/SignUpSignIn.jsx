@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useAuth } from "../context/AuthContext";
 
@@ -12,6 +12,19 @@ const SignUpSignIn = () => {
 
   const { login } = useAuth();
 
+  useEffect(() => {
+    const storedEmail = localStorage.getItem("email");
+    const storedName = localStorage.getItem("name");
+    const storedPhone = localStorage.getItem("phone");
+    const storedPassword = localStorage.getItem("password");
+    if (storedEmail && storedName && storedPhone && storedPassword) {
+      setEmail(storedEmail);
+      setName(storedName);
+      setPhone(storedPhone);
+      setPassword(storedPassword);
+    }
+  }, []);
+
   const handleSignUp = () => {
     if (
       email.trim() !== "" &&
@@ -24,7 +37,7 @@ const SignUpSignIn = () => {
       localStorage.setItem("password", password);
       localStorage.setItem("phone", phone);
       setLoggedIn(true);
-      toast.success("login sucessfull");
+      toast.success("login successful");
       login({ email, name, password, phone });
     } else {
       toast.error("Please fill in all fields.");
@@ -41,7 +54,7 @@ const SignUpSignIn = () => {
 
     if (email === storedEmail && password === storedPassword) {
       setLoggedIn(true);
-      toast.success("login sucessfull");
+      toast.success("login successful");
       login({ email, password });
     } else {
       toast.error("Invalid email or password.");
