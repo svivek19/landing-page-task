@@ -6,6 +6,7 @@ import TopPerformer from "./components/TopPerformer";
 import Reviews from "./components/Reviews";
 import Footer from "./components/Foooter";
 import Classes from "./pages/Classes";
+import Products from "./pages/Products";
 
 const Home = () => (
   <div className="flex flex-col">
@@ -23,6 +24,7 @@ const App = () => {
         <Routes className="flex-1">
           <Route path="/" exact element={<Home />} />
           <Route path="/classes" element={<Classes />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
         <Footer />
       </div>
