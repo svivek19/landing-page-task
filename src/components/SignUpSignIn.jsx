@@ -53,7 +53,7 @@ const SignUpSignIn = () => {
   return (
     <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <Toaster />
-      <div className="max-w-md w-full p-8 rounded shadow-md">
+      <div className="md:w-1/2 w-full md:p-8 p-0 rounded shadow-md">
         <h2 className="text-center text-3xl font-extrabold text-gray-900 mb-6">
           {isSignUp ? "Sign Up" : "Sign In"}
         </h2>
