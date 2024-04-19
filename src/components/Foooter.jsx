@@ -4,13 +4,13 @@ import { FaTwitter, FaFacebook, FaInstagram, FaDiscord } from "react-icons/fa";
 const Foooter = () => {
   return (
     <div className="bg-slate-950 mt-20 p-10 text-slate-100">
-      <div className="flex justify-between">
-        <div className="text-xl uppercase leading-loose">
+      <div className="md:flex justify-between space-y-5">
+        <div className="text-lg md:text-xl uppercase leading-loose">
           <h1>Karo abhayaas</h1>
           <h1>112, electronic city</h1>
           <h1>bangalore, india</h1>
         </div>
-        <div className="text-xl space-y-3 items-center">
+        <div className="text-xl space-y-3 ">
           <h1 className="">Contact Here</h1>
           <div className="flex space-x-3 text-xl cursor-pointer">
             <FaDiscord className="hover:text-red-500 transition-all duration-300" />
