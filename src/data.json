@@ -25,6 +25,48 @@
         "review": "The instructor was engaging and explained complex topics clearly. Highly recommended!",
         "image": "https://media.istockphoto.com/id/1438969575/photo/smiling-young-male-college-student-wearing-headphones-standing-in-a-classroom.jpg?s=612x612&w=0&k=20&c=yNawJP9JGXU6LOL262ME5M1U2xxNKQsvT7F9DZhZCh4="
       }
+    ],
+    "reviews": [
+      {
+        "name": "John Doe",
+        "review": "Great experience! The customer service was excellent, and the product exceeded my expectations."
+      },
+      {
+        "name": "Alice Smith",
+        "review": "I had a wonderful time dealing with this company. The staff was very helpful and knowledgeable."
+      },
+      {
+        "name": "Emily Johnson",
+        "review": "I am extremely satisfied with my purchase. The delivery was prompt, and the product quality is top-notch."
+      },
+      {
+        "name": "Michael Brown",
+        "review": "I had a bit of an issue with my order initially, but the support team was quick to resolve it. Very impressed with their responsiveness."
+      },
+      {
+        "name": "Sarah Williams",
+        "review": "The product I received was exactly as described, and the pricing was very competitive. Would definitely recommend!"
+      },
+      {
+        "name": "David Anderson",
+        "review": "This company has consistently provided excellent service. I've been a loyal customer for years."
+      },
+      {
+        "name": "Jessica Taylor",
+        "review": "I'm blown away by the quality of their products. It's rare to find such craftsmanship these days."
+      },
+      {
+        "name": "Daniel Martinez",
+        "review": "The website is user-friendly, and the ordering process was seamless. Kudos to the team!"
+      },
+      {
+        "name": "Sophia Garcia",
+        "review": "I had some doubts before making my purchase, but those were quickly dispelled by their outstanding support."
+      },
+      {
+        "name": "William Clark",
+        "review": "I've never had any issues with their products. They're durable and reliable."
+      }
     ]
   }
   

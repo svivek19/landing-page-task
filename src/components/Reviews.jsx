@@ -40,17 +40,18 @@ const Reviews = () => {
     <div className="w-11/12 mx-auto mt-10">
       <h2 className="my-4 text-2xl text-center font-semibold">Reviews</h2>
       <div className="flex overflow-x-auto scrollbar-hide" ref={containerRef}>
-        {data.students.map((student, index) => (
+        {data.reviews.map((user, index) => (
           <div
-            className="min-w-80 mx-2 my-4 bg-slate-50 rounded-lg shadow-md"
+            className="min-w-80 mx-2 my-4 bg-gray-200 rounded-lg shadow-md"
             key={index}
           >
             <div className="p-5">
-              <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-600 ">
-                {student.name}
+              <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-800 ">
+                {user.name}
               </h5>
-              <p className="mb-3 font-normal text-gray-400 text-justify">
-                {student.review}
+              <hr />
+              <p className="mb-3 font-normal text-gray-600 text-justify">
+                {user.review}
               </p>
             </div>
           </div>
