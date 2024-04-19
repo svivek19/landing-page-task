@@ -94,6 +94,38 @@
         "image_url": "https://cdn1.byjus.com/neet/wp-content/uploads/2018/03/13061925/neet.jpg",
         "description": "A comprehensive study material package containing textbooks, reference guides, question banks, and practice papers curated by experts to cover the entire NEET syllabus, enabling self-paced learning and effective revision."
       }
+    ],
+    "products": [
+      {
+        "title": "NEET Study Guide",
+        "description": "Comprehensive study guide covering all subjects for NEET exam preparation.",
+        "price": "3000",
+        "image": "https://i0.wp.com/kotacart.com/wp-content/uploads/2023/09/Side-View.webp?fit=1000%2C1000&ssl=1"
+      },
+      {
+        "title": "NEET Practice Tests",
+        "description": "Set of practice tests with detailed solutions to help you prepare effectively for the NEET exam.",
+        "price": "1500",
+        "image": "https://rukminim2.flixcart.com/image/850/1000/l27wtjk0/regionalbooks/o/d/3/neet-mock-test-papers-biology-book-based-on-new-pattern-of-nta-original-imagdmfdbnkkwuhc.jpeg?q=90&crop=false"
+      },
+      {
+        "title": "NEET Flashcards",
+        "description": "Flashcards covering important concepts and formulas for quick revision before the NEET exam.",
+        "price": "500",
+        "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/regionalbooks/f/8/l/ncert-based-neet-ug-biology-flashcards-for-class-11th-original-imagswfznddyqwky.jpeg?q=90&crop=false"
+      },
+      {
+        "title": "NEET Online Course",
+        "description": "Interactive online course with video lectures and quizzes to enhance your NEET exam preparation.",
+        "price": "1500",
+        "image": "https://cbseeguru.com/wp-content/uploads/2021/10/neet-online-12.jpg"
+      },
+      {
+        "title": "NEET Mock Test Series",
+        "description": "Series of mock tests simulating the NEET exam environment to boost your confidence.",
+        "price": "600",
+        "image": "https://m.media-amazon.com/images/I/61d-jazI0BL._AC_UF1000,1000_QL80_.jpg"
+      }
     ]
   }
   
